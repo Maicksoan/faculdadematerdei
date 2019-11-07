@@ -1,0 +1,55 @@
+<mat-toolbar class="toolbar-main">
+    <button mat-icon-button (click)="sidenav_menu.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <h2>Jobber Admin</h2>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-main">
+    <mat-sidenav #sidenav_menu mode="side">
+        <h3 mat-subheader>Menu</h3>
+        <mat-nav-list>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLinkActive="active">
+                <mat-icon mat-list-icon>local_library</mat-icon>
+                <a matLine routerLink="/cidade">Cidades</a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLinkActive="active">
+                <mat-icon mat-list-icon>local_library</mat-icon>
+                <a matLine routerLink="/estado">Estados</a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLinkActive="active">
+                <mat-icon mat-list-icon>group</mat-icon>
+                <a matLine routerLink="/contratante">Contratantes</a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLinkActive="active">
+                <mat-icon mat-list-icon>face</mat-icon>
+                <a matLine routerLink="/prestador">Prestadores</a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLinkActive="active">
+                <mat-icon mat-list-icon>list_alt</mat-icon>
+                <a matLine routerLink="/servico">Serviços</a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLinkActive="active">
+                <mat-icon mat-list-icon>vertical_split</mat-icon>
+                <a matLine routerLink="/indicadores">Indicadores</a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLinkActive="active">
+                <mat-icon mat-list-icon>close</mat-icon>
+                <a matLine routerLink="/sair">Sair</a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+
+        
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
