@@ -7,6 +7,7 @@ import { PrestadorComponent } from './prestador/prestador.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { EstadoComponent } from './estado/estado.component';
+import {UserComponent} from './user/user.component';
 
 
 
@@ -17,7 +18,10 @@ const routes: Routes = [
   { path: 'servico', component: ServicoComponent },
   { path: 'prestador', component: PrestadorComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'user', component: UserComponent },
+  { path: '**', redirectTo: 'home'}
+
   //otherwise
 ];
 

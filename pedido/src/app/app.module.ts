@@ -34,6 +34,7 @@ import { PrestadorComponent } from './prestador/prestador.component';
 import { TabelaprecoComponent } from './tabelapreco/tabelapreco.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { HomeComponent } from './home/home.component';
     PrestadorComponent,
     TabelaprecoComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
